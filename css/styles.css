@@ -3,9 +3,11 @@
     background-color: #4CAF50; /* Color verd de fons */
     color: white; /* Color de text */
     border-radius: 5px; /* Radius border */
+    cursor: pointer;
 
 }
 
-
-
+body {
+    background-image: url("../img/bg-01.jpg"); /* Imatge de fons */
+}
 
