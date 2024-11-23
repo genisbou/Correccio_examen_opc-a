@@ -3,7 +3,7 @@
     background-color: #4CAF50; /* Color verd de fons */
     color: white; /* Color de text */
     border-radius: 5px; /* Radius border */
-    cursor: pointer;
+    cursor: pointer; /* Transforma el cursor en una mà */
 
 }
 
@@ -11,3 +11,7 @@ body {
     background-image: url("../img/bg-01.jpg"); /* Imatge de fons */
 }
 
+fieldset {
+    border : 2px solid white;
+    border-radius: 15px;
+}
