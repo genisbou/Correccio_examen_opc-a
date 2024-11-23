@@ -1,0 +1,39 @@
+<!-- Opció A
+
+Problema
+A partir d’aquest formulari, l'usuari ha d'indicar un text i un caràcter. Al premer el botó es
+cercaran totes aquelles paraules que tinguin el caràcter indicat per l'usuari. Se suposa que les
+paraules estan separades entre elles per espais en blanc.
+Cal mostrar les paraules en una llista ordenada <ul>, on s'indicarà cada paraula i la posició on s'ha
+trobat el caràcter dins cada paraula.
+A més a més, es vol mostrar la paraula amb la lletra trobada en negreta. Cal validar que el text
+tingui com a mínim 2 paraules i que s'indiqui un caràcter, no numèric, ni símbol. Mostrar avís
+en cas que no es compleixin els requisits o que no s'hagi trobat cap paraula que contingui el
+caràcter indicat.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link JS file with defer attribute -->
+    <script defer src="index.js"></script>
+</head>
+<body>
+<form action="index.html">
+    <fieldset>
+        <legend>Problema</legend>
+        <label for="text">Text:</label>
+        <input type="text" name="text" id="text" value="hola adeu" required>
+        <br>
+        <label for="char">Caràcter:</label>
+        <br>
+        <input type="text" name="char" id="char" value="a"  required>
+
+        <br>
+        <input type="button" id="iniciar" value="INICIAR"
+    </fieldset>
+</form>
+<div id="resultat"></div>
+</body>
+</html>
