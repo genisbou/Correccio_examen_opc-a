@@ -2,7 +2,6 @@
     border: none; /* border null */
     background-color: #4CAF50; /* Color verd de fons */
     color: white; /* Color de text */
-    padding: 10px 20px; /* Espai entre text i bordes */
     border-radius: 5px; /* Radius border */
 
 }
