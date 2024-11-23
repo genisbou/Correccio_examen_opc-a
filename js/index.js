@@ -13,6 +13,7 @@
 // caràcter indicat.
 
 document.getElementById("iniciar").addEventListener("click", () => {
+    console.log("Iniciant programa");
 
     // Validar que el text tingui com a mínim 2 paraules i que s'indiqui un caràcter
     let text = document.getElementById("text").value;
