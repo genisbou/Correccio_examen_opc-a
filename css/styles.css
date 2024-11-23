@@ -12,6 +12,6 @@ body {
 }
 
 fieldset {
-    border : 2px solid white;
+    border : 2px solid white; /* Grossor border */
     border-radius: 15px;
 }
