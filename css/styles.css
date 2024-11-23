@@ -16,11 +16,3 @@ fieldset {
     border-radius: 15px;
 }
 
-#resultat {
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Direcció en vertical (column)*/
-    justify-content: center;
-    align-items: center; /* Aliniació dels elements */
-    text-align: center;
-
-}
