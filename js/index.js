@@ -44,16 +44,18 @@ document.getElementById("iniciar").addEventListener("click", () => {
 
     // Cercar les paraules que continguin el caràcter indicat
     let paraules_trobat = [];
-    let trobat = false;
+
+    let html_ul = "<ul>"
+
     for (let i = 0; i < text_splitat.length; i++){
         if (text_splitat[i].includes(car)){
             paraules_trobat.push(text_splitat[i]);
-            trobat = true;
+            let html_li = "<li>"
         }
 
 
 
-        if (trobat== true){
+        if (paraules_trobat.length){
             // alert("S'ha trobat la paraula");
 
             document.getElementById("resultat").innerHTML = "<ul> <li>" + paraules_trobat + "</li> </ul>";
