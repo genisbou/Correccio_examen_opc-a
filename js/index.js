@@ -76,6 +76,8 @@ document.getElementById("iniciar").addEventListener("click", () => {
             alert("No s'ha trobat la paraula");
         }
     }
-    
+
+    html_ul += "</ul>";
+    document.getElementById("resultat").innerHTML = html_ul;
 
 });
