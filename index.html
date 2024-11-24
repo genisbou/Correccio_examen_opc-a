@@ -17,22 +17,21 @@ caràcter indicat.  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Link JS file with defer attribute -->
-    <script defer src="js/index.js"></script>
-    <link rel="stylesheet" type="" href="css/styles.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
 <form action="index.html">
     <fieldset>
         <legend>Problema</legend>
         <label for="text">Text:</label>
-        <textarea id="text" name="text" rows="4" cols="50">Ara mateix enfilo aquesta agulla. Amb ...</textarea>
+        <input type="text" name="text" id="text" value="hola adeu" required>
         <br>
         <label for="char">Caràcter:</label>
-        <input type="text" name="char" id="char" value="" placeholder="Ex: a" required>
+        <br>
+        <input type="text" name="char" id="char" value="a"  required>
 
         <br>
-        <input type="button" class="button" id="iniciar" value="INICIAR">
-
+        <input type="button" id="iniciar" value="INICIAR"
     </fieldset>
 </form>
 <div id="resultat"></div>
