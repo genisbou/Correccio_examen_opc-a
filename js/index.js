@@ -12,6 +12,7 @@
 // en cas que no es compleixin els requisits o que no s'hagi trobat cap paraula que contingui el
 // caràcter indicat.
 
+
 document.getElementById("iniciar").addEventListener("click", () => {
     console.log("Iniciant programa");
 
@@ -19,7 +20,7 @@ document.getElementById("iniciar").addEventListener("click", () => {
     let text = document.getElementById("text").value;
     let car = document.getElementById("char").value;
     let simbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "-", "=", "{", "}", "[", "]", "|", ":", ";", "'", "<", ">", ",", ".", "?", "/"];
-    text_splitat = text.split(" ");
+    let text_splitat = text.split(" ");
 
     // Validar que el text tingui com a mínim 2 paraules
     if (text_splitat.length < 2){
@@ -31,7 +32,6 @@ document.getElementById("iniciar").addEventListener("click", () => {
     if (car.length != 1){
         alert("Indica un sol caràcter");
         return;
-
     }
     if (car.match(/[0-9]/))  {
         alert("No pots introduir números");
@@ -44,46 +44,31 @@ document.getElementById("iniciar").addEventListener("click", () => {
 
     // Cercar les paraules que continguin el caràcter indicat
     let paraules_trobat = [];
-
-
-    let html_ul = "<ul>"
+    let html_ul = "<ul>";
 
     for (let i = 0; i < text_splitat.length; i++){
         if (text_splitat[i].includes(car)){
             paraules_trobat.push(text_splitat[i]);
 
-            let html_li = "<li>"
+            let html_li = "<li>";
 
-            for (lletra of text_splitat[i]){
+            for (let lletra of text_splitat[i]){
                 if (lletra === car){
                     html_li += "<strong>" + lletra + "</strong>";
-                }
-                else {
+                } else {
                     html_li += lletra;
                 }
             }
 
             html_li += "</li>";
             html_ul += html_li;
-
         }
+    }
 
-        for (let j = 0; j < text_splitat.length; i++){
-        }
-
-
-
-        if (paraules_trobat.length){
-            // alert("S'ha trobat la paraula");
-        }
-        else {
-            alert("No s'ha trobat la paraula");
-        }
-
-
+    if (paraules_trobat.length === 0){
+        alert("No s'ha trobat cap paraula que contingui el caràcter indicat");
     }
 
     html_ul += "</ul>";
     document.getElementById("resultat").innerHTML = html_ul;
-
 });
