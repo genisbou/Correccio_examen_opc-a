@@ -52,10 +52,14 @@ document.getElementById("iniciar").addEventListener("click", () => {
             paraules_trobat.push(text_splitat[i]);
             let html_li = "<li>"
 
-            for (lletra of text_splitat[i]){}
+            for (lletra of text_splitat[i]){
                 if(lletra === car){
                     html_li += "<strong>" + lletra + "</strong>";
                 }
+                else {
+                    html_li += lletra;
+                }
+            }
         }
 
 
