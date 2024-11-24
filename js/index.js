@@ -60,20 +60,22 @@ document.getElementById("iniciar").addEventListener("click", () => {
                     html_li += lletra;
                 }
             }
+            html_li += "</li>";
+            html_ul += "html_li";
         }
 
+        for (let j = 0; j < text_splitat.length; i++){
+
+        }
 
 
         if (paraules_trobat.length){
             // alert("S'ha trobat la paraula");
-
-            document.getElementById("resultat").innerHTML = "<ul> <li>" + paraules_trobat + "</li> </ul>";
-
-
         }
         else {
             alert("No s'ha trobat la paraula");
         }
     }
+    
 
 });
