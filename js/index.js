@@ -45,28 +45,32 @@ document.getElementById("iniciar").addEventListener("click", () => {
     // Cercar les paraules que continguin el caràcter indicat
     let paraules_trobat = [];
 
+
     let html_ul = "<ul>"
 
     for (let i = 0; i < text_splitat.length; i++){
         if (text_splitat[i].includes(car)){
             paraules_trobat.push(text_splitat[i]);
+
             let html_li = "<li>"
 
             for (lletra of text_splitat[i]){
-                if(lletra === car){
+                if (lletra === car){
                     html_li += "<strong>" + lletra + "</strong>";
                 }
                 else {
                     html_li += lletra;
                 }
             }
+
             html_li += "</li>";
-            html_ul += "html_li";
+            html_ul += html_li;
+
         }
 
         for (let j = 0; j < text_splitat.length; i++){
-
         }
+
 
 
         if (paraules_trobat.length){
@@ -75,6 +79,8 @@ document.getElementById("iniciar").addEventListener("click", () => {
         else {
             alert("No s'ha trobat la paraula");
         }
+
+
     }
 
     html_ul += "</ul>";
