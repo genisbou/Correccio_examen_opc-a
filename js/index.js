@@ -51,6 +51,11 @@ document.getElementById("iniciar").addEventListener("click", () => {
         if (text_splitat[i].includes(car)){
             paraules_trobat.push(text_splitat[i]);
             let html_li = "<li>"
+
+            for (lletra of text_splitat[i]){}
+                if(lletra === car){
+                    html_li += "<strong>" + lletra + "</strong>";
+                }
         }
 
 
